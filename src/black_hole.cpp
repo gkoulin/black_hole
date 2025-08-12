@@ -144,7 +144,7 @@ struct ObjectData {
 vector<ObjectData> objects = {
     { vec4(4e11f, 0.0f, 0.0f, 4e10f)   , vec4(1,1,0,1), 1.98892e30 },
     { vec4(0.0f, 0.0f, 4e11f, 4e10f)   , vec4(1,0,0,1), 1.98892e30 },
-    { vec4(0.0f, 0.0f, 0.0f, SagA.r_s) , vec4(0,0,0,1), SagA.mass  },
+    { vec4(0.0f, 0.0f, 0.0f, static_cast<float>(SagA.r_s)), vec4(0,0,0,1), static_cast<float>(SagA.mass) },
     //{ vec4(6e10f, 0.0f, 0.0f, 5e10f), vec4(0,1,0,1) }
 };
 
